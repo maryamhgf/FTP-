@@ -29,3 +29,5 @@ Commands:
 3. Retrieve: after this command you are asked to insert file name. server will send the file in 10000B parts. 
 
 For new command client should establish a new connection.
+
+A record of clients commands and server responses will be shown in server terminal.
