@@ -22,10 +22,10 @@ For every new client open a new terminal and type the previous command.
 
 Commands:
 
-1. Delete name of file: server will delete that file.
+1. Delete: after this command you are asked to insert file name. server will delete that file.
 
 2. List: client can see all the files.
 
-3. Retrieve name of file: server will send the file in 10000B parts. 
+3. Retrieve: after this command you are asked to insert file name. server will send the file in 10000B parts. 
 
 For new command client should establish a new connection.
