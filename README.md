@@ -30,4 +30,4 @@ Commands:
 
 For new command client should establish a new connection.
 
-A record of clients commands and server responses will be shown in server terminal.
+A record of clients' commands and server responses will be shown in server terminal.
