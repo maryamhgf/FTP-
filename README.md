@@ -1,5 +1,5 @@
 # FTP-
-Implementation of FTP server and clients can delete, retrieve, and take list of files.
+Implementation of a FTP server. Clients can delete, retrieve, and take list of files.
 
 
 ***All ftp files should be in ftp_server.py directory, or you can easily change the path in code.***
