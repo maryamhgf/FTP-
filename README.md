@@ -1,33 +1,32 @@
 # FTP
-Implementation of a FTP server using socket programming. Clients can delete, retrieve, and take list of files.
+Implementation of FTP protocol using socket programming. Clients can delete files, retrieve files, and get a list of files.
+Here is how to run the server and the client on linux machines:
+All ftp files should be in the same directory as the ftp_server.py file, or you can easily change the path in the code.
 
+Server:
 
-***All ftp files should be in ftp_server.py directory, or you can easily change the path in code.***
+1. Open the terminal and cd to the directory of the codes.
 
-Server:(Ubuntu)
+2. In the terminal run the server by: “python ftp_server.py -sp 9090”.
 
-1. Open terminal and type cd "directory of the codes".
+(The server will be run on port 9090).
 
-2. The server will be run in port 9090(you can change it in the code.)
+Client:
 
-3. Type python ftp_server.py -sp 9090 in the terminal.
+1. Open another terminal and cd to the directory of the codes.
 
-Client:(Ubuntu)
+2. In the terminal run the client by: “python ftp_client.py -sip 127.0.0.1 -sp 9090”
 
-1. Open a new terminal and type cd "directory of the codes".
+(Connecting to a server running on localhost and port number 9090)
 
-2. Type python ftp_client.py sip- server-ip sp- 9090 (For example: python client.py sip- 9090 sp- 9090)
+In the client side, you can type the following commands for their specific purposes:
 
-For every new client open a new terminal and type the previous command.
+Delete: you are asked to insert the file name which will be deleted by the server.
 
-Commands:
+List: the server will provide the client with a list of all the files.
 
-1. Delete: after this command you are asked to insert file name. server will delete that file.
+Retrieve: you are asked to insert the file name for retrieval. The server will send the client the requested file in 10000B chunks.
 
-2. List: client can see all the files.
+Please note that the client should establish a new connection for a new command.
 
-3. Retrieve: after this command you are asked to insert file name. server will send the file in 10000B parts. 
-
-For new command client should establish a new connection.
-
-A record of clients' commands and server responses will be shown in server terminal.
+A record of the clients' commands and the server’s responses will be shown in the server’s terminal.
